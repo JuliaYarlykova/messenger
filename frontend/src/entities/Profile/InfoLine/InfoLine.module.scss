@@ -1,0 +1,10 @@
+.line {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: var(--secondary-text-color);
+}
+.text {
+  font-size: 16px;
+  color: var(--text-color);
+}

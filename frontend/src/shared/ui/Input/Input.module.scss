@@ -1,0 +1,228 @@
+.input {
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid var(--secondary-hover-color);
+  border-radius: 4px;
+  width: 100%;
+  color: white;
+  font-weight: 400;
+  background-color: transparent;
+  &:disabled {
+    color: var(--grey-secondary-color);
+    border-color: transparent;
+    &::placeholder {
+      color: var(--grey-secondary-color);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--violet-color);
+  }
+
+  &:hover:not(:disabled):not(:read-only) {
+    box-shadow: 0 4px 30px 0 var(--grey-secondary-color-50pct);
+  }
+
+  &::placeholder {
+    color: var(--secondary-text-color);
+  }
+}
+
+.addonLeft,
+.addonRight {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  svg {
+    fill: var(--grey-primary-color);
+  }
+  span {
+    color: var(--grey-primary-color);
+  }
+}
+
+.helperText {
+  color: var(--grey-primary-color);
+}
+
+.l {
+  input {
+    height: 48px;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 48px;
+
+    &::placeholder {
+      font: var(--font-14);
+    }
+  }
+
+  .withAddonLeft input {
+    padding-left: 43px;
+  }
+
+  .withAddonRight input {
+    padding-right: 51px;
+  }
+
+  .addonRight {
+    right: 24px;
+  }
+
+  .addonLeft {
+    left: 16px;
+  }
+
+  .addonLeft,
+  .addonRight {
+    width: 20px;
+    height: 20px;
+
+    span {
+      font-size: 20px;
+      font-variation-settings: 'OPSZ' 20;
+    }
+  }
+
+  .helperText {
+    font: var(--font-14);
+    margin-top: 8px;
+  }
+}
+
+.m {
+  input {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 7px;
+
+    &::placeholder {
+      font: var(--font-12);
+    }
+  }
+
+  .withAddonLeft input {
+    padding-left: 31px;
+  }
+
+  .withAddonRight input {
+    padding-right: 31px;
+  }
+
+  .addonRight {
+    right: 8px;
+  }
+
+  .addonLeft {
+    left: 8px;
+  }
+
+  .addonLeft,
+  .addonRight {
+    width: 16px;
+    height: 16px;
+
+    span {
+      font-size: 16px;
+      font-variation-settings: 'OPSZ' 16;
+    }
+  }
+
+  .helperText {
+    font: var(--font-12);
+    margin-top: 4px;
+  }
+}
+
+.s {
+  input {
+    height: 32px;
+    padding: 0 7px;
+    font-size: 12px;
+    line-height: 32px;
+
+    &::placeholder {
+      font: var(--font-12);
+    }
+  }
+
+  .withAddonLeft input {
+    padding-left: 29px;
+  }
+
+  .withAddonRight input {
+    padding-right: 29px;
+  }
+
+  .addonRight {
+    right: 8px;
+  }
+
+  .addonLeft {
+    left: 8px;
+  }
+
+  .addonLeft,
+  .addonRight {
+    width: 14px;
+    height: 14px;
+
+    span {
+      font-size: 14px;
+      font-variation-settings: 'OPSZ' 14;
+    }
+  }
+
+  .helperText {
+    font: var(--font-12);
+    margin-top: 4px;
+  }
+}
+
+.error {
+  input {
+    border-color: var(--error-color);
+    background-color: var(--error-color-10pct);
+  }
+  .helperText {
+    color: var(--error-color);
+  }
+}
+
+.disabled {
+  .helperText {
+    color: var(--grey-secondary-color);
+  }
+  svg {
+    fill: var(--grey-secondary-color);
+  }
+}
+
+.label {
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--secondary-text-color);
+  margin-bottom: 8px;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  z-index: 10;
+  background-color: var(--primary-color);
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.InputWrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+}

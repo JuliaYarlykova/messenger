@@ -1,0 +1,12 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+
+  align-items: center;
+}
+
+.text {
+  color: var(--text-color);
+  font-size: 45px;
+}

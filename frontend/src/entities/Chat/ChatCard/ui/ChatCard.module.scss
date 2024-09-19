@@ -1,0 +1,17 @@
+.chat {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.last {
+  color: var(--secondary-text-color);
+}

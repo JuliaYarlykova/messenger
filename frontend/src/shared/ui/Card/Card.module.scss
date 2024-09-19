@@ -1,0 +1,55 @@
+.default {
+  background: var(--face-color);
+}
+
+.light {
+  background: var(--primary-color);
+}
+
+.outlined {
+  border: 1px solid var(--footer-bg);
+}
+
+.none {
+  border-radius: 0;
+}
+
+.normal {
+  border-radius: 4px;
+}
+
+.partial {
+  border-radius: 30px;
+}
+
+.round {
+  border-radius: 40px;
+}
+
+.gap_0 {
+  padding: 0;
+}
+
+.gap_4 {
+  padding: 4px;
+}
+
+.gap_8 {
+  padding: 8px;
+}
+
+.gap_16 {
+  padding: 16px;
+}
+
+.gap_24 {
+  padding: 24px;
+}
+
+.gap_32 {
+  padding: 32px;
+}
+
+.max {
+  width: 100%;
+}

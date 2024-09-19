@@ -1,0 +1,29 @@
+.link {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  border: none;
+}
+
+.normal {
+  background-color: transparent;
+  &:hover {
+    background-color: var(--secondary-hover-color);
+  }
+  &:active {
+    background-color: var(--violet-color);
+  }
+}
+
+.round {
+  border-radius: 100%;
+  background-color: var(--violet-color);
+  &:hover {
+    background-color: var(--violet-hover-color);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

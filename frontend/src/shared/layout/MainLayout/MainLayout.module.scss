@@ -1,0 +1,27 @@
+.MainLayout {
+  padding: 8px;
+  display: grid;
+  grid-template-areas:
+    'header children'
+    'sidebar children';
+  grid-template-columns: 1fr 3fr;
+  column-gap: 8px;
+  row-gap: 8px;
+  height: 100%;
+}
+
+.children {
+  grid-area: children;
+  justify-self: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  grid-area: header;
+  top: 0;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}

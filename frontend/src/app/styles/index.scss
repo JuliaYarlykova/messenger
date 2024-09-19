@@ -1,0 +1,16 @@
+@import 'reset';
+@import './variables/global';
+
+.app {
+  min-height: 100vh;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+
+.content-page {
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
