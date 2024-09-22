@@ -1,5 +1,4 @@
-import { Avatar } from '@/shared/ui'
-
+import { EditAvatar } from '@/features/EditAvatar/ui/EditAvatar'
 import cls from './AvatarPart.module.scss'
 
 interface AvatarPartProps {
@@ -11,7 +10,7 @@ export const AvatarPart = (props: AvatarPartProps) => {
   const { img, name } = props
   return (
     <section className={cls.section}>
-      <Avatar src={img} size={350} />
+      <EditAvatar img={img} />
       <h1 className={cls.text}>{name}</h1>
     </section>
   )
