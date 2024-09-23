@@ -7,4 +7,9 @@ const user = {
   aducation: 'ТУСУР',
 }
 
-export const AuthContext = createContext<typeof user | null>(null)
+interface user {
+  login: string
+  password: string
+}
+
+export const AuthContext = createContext<user | null>(null)
