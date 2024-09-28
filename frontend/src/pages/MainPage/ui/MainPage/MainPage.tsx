@@ -3,7 +3,7 @@ import { Page } from '@/widgets/Page'
 import { memo } from 'react'
 
 import cls from './MainPage.module.scss'
-import { ChatPart } from '../ChatPart/ChatPart'
+import { ChatPart } from '@/features/Chating/ui/ChatPart'
 
 const MainPage = () => (
   <Page className={cls.page}>

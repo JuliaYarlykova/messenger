@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes, ReactNode } from 'react'
 
 import cls from './Button.module.scss'
 
-type Variant = 'normal' | 'round'
+type Variant = 'normal' | 'round' | 'ghost'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode

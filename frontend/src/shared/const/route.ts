@@ -7,3 +7,4 @@ export enum AppRoutes {
 
 export const getRouteMain = () => '/'
 export const getRouteProfile = () => '/profile'
+export const getRouteAuth = () => '/auth'

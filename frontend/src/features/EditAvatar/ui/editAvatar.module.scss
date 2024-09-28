@@ -1,0 +1,25 @@
+.wrapper {
+  position: relative;
+}
+
+.edit {
+  color: var(--violet-color);
+}
+
+.label {
+  position: absolute;
+  padding: 6px;
+  width: fit-content;
+  border-radius: 100%;
+  bottom: 53px;
+  right: 53px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.input {
+  opacity: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+}

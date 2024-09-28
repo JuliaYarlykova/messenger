@@ -20,47 +20,46 @@
   --text-color: #ffffff;
   --title-color: #101010;
   --violet-color: #8774e1;
-	--violet-hover-color:#907fe3;
+  --violet-hover-color: #907fe3;
   --secondary-text-color: #aaaaaa;
   --violetgrey-hover-color: #302d2e;
-	--grey-secondary-color-50pct: #2b2b2b80;
-	--error-color:#dc4a4a;
+  --grey-secondary-color-50pct: #2b2b2b80;
+  --error-color: #dc4a4a;
   //значение переменной - место с которого начинается перестроение на следующий макет
-
-	--widthBig:1600px
-	--widthLg:1400px
-	--widthMd:1200px
-	--widthSm:1000px
-	--widthSx:767px
 }
+
+$widthBig: 1600px;
+$widthLg: 1400px;
+$widthMd: 1200px;
+$widthSm: 1000px;
+$widthSx: 767px;
 
 //название миксина - это ширина макета у дизайнера
 
 @mixin _1440 {
-	@media  screen and (max-width: var(--widthBig)) {
-		@content;
-	}
+  @media screen and (max-width: $widthBig) {
+    @content;
+  }
 }
 
 @mixin _1366 {
-	@media  screen and (max-width: var(--widthLg)) {
-		@content;
-	}
+  @media screen and (max-width: $widthLg) {
+    @content;
+  }
 }
 @mixin _1024 {
-	@media  screen and (max-width: var(--widthMd)) {
-		@content;
-	}
+  @media screen and (max-width: $widthMd) {
+    @content;
+  }
 }
 @mixin _768 {
-	@media  screen and (max-width: var(--widthSm)) {
-		@content;
-	}
+  @media screen and (max-width: $widthSm) {
+    @content;
+  }
 }
 
 @mixin _320 {
-	@media  screen and (max-width: var(--widthSx)) {
-		@content;
-	}
+  @media screen and (max-width: $widthSx) {
+    @content;
+  }
 }
-

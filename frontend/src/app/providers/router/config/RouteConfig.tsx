@@ -1,6 +1,13 @@
+import { AuthPage } from '@/pages/AuthPage'
 import { MainPage } from '@/pages/MainPage'
+import { NotFoundPage } from '@/pages/NotFoundpage'
 import ProfilePage from '@/pages/ProfilePage/ui/ProfilePage/ProfilePage'
-import { AppRoutes, getRouteMain, getRouteProfile } from '@/shared/const/route'
+import {
+  AppRoutes,
+  getRouteAuth,
+  getRouteMain,
+  getRouteProfile,
+} from '@/shared/const/route'
 import { type RouteProps } from 'react-router-dom'
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -9,12 +16,12 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
     element: <MainPage />,
   },
   [AppRoutes.AUTH]: {
-    path: getRouteMain(),
-    element: <MainPage />,
+    path: getRouteAuth(),
+    element: <AuthPage />,
   },
   [AppRoutes.NOT_FOUND]: {
-    path: getRouteMain(),
-    element: <MainPage />,
+    path: '*',
+    element: <NotFoundPage />,
   },
   [AppRoutes.PROFILE]: {
     path: getRouteProfile(),
