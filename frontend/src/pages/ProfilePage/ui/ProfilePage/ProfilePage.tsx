@@ -1,22 +1,17 @@
 import { Button } from '@/shared/ui'
 import { Page } from '@/widgets/Page'
-import { memo, useState } from 'react'
+import { memo, useContext, useState } from 'react'
 import { AvatarPart } from '../AvatarPart/AvatarPart'
 import { PersonalInfo } from '../PersonalInfo/PersonalInfo'
 
 import cls from './profilePage.module.scss'
 import { UpdateProfile } from '@/features/UpdateProfile'
-
-const user = {
-  name: 'Ярлыкова Юлия',
-  birthday: '25-06-2004',
-  img: '',
-  city: 'Томск',
-  aducation: 'ТУСУР',
-}
+import { AuthContext } from '@/shared/lib/hooks/useContext'
 
 const ProfilePage = () => {
   const [isOpen, setOpen] = useState(false)
+  const user = useContext(AuthContext)
+  if (!user) return null
   return (
     <Page className={cls.page}>
       <Button className={cls.button} onClick={() => setOpen(true)}>

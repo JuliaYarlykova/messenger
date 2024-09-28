@@ -1,9 +1,13 @@
+@import '@/app/styles/variables/global.scss';
+
 .chat {
   display: flex;
   flex-direction: row;
   gap: 5px;
   align-items: center;
+  justify-content: flex-start;
   color: white;
+  position: relative;
 }
 
 .info {
@@ -12,6 +16,39 @@
   gap: 5px;
 }
 
+.title {
+  font-size: 18px;
+  @include _1024 {
+    font-size: 14px;
+  }
+  @include _320 {
+    font-size: 18px;
+  }
+}
+
 .last {
   color: var(--secondary-text-color);
+  @include _1024 {
+    font-size: 12px;
+  }
+  @include _320 {
+    font-size: 16px;
+  }
+}
+
+.delete {
+  color: var(--error-color);
+  size: 7px;
+  position: absolute;
+  right: 5px;
+  top: 30%;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  @include _1024 {
+    width: 45px;
+    height: 45px;
+  }
 }
