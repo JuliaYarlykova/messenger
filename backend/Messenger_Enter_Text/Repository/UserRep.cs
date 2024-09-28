@@ -125,11 +125,12 @@ namespace Messenger_Enter_Text.Repository
       {
         return false;
       }
-      if (newPassword == user.Password)
+      if (PasswordHasher.VerifyPassword(newPassword, user.Password) &&
+          PasswordHasher.VerifyPassword(oldPassword, user.Password))
       {
         return true;
       }
-      if(oldPassword == user.Password)
+      if(PasswordHasher.VerifyPassword(oldPassword, user.Password))
       {
         user.Password = newPassword;
         Update(user);

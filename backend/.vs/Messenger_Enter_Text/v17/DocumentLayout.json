@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\repository\\userrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\repository\\userrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -130,31 +130,30 @@
               "RelativeToolTip": "Messenger_Enter_Text\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T06:29:01.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T06:29:01.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Messenger_Enter_Text\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\UserController.cs",
               "RelativeToolTip": "Messenger_Enter_Text\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAAwDkAAAAHAAAA",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAmwG0AAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T11:05:39.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserRep.cs",
               "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Repository\\UserRep.cs",
               "RelativeDocumentMoniker": "Messenger_Enter_Text\\Repository\\UserRep.cs",
               "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Repository\\UserRep.cs",
               "RelativeToolTip": "Messenger_Enter_Text\\Repository\\UserRep.cs",
-              "ViewState": "AQIAAKEAAAAAAAAAAAAAAJsAAAAuAAAA",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAQwJgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T07:49:32.728Z",
               "EditorCaption": ""
