@@ -1,17 +1,27 @@
+import { createAsyncThunk } from '@reduxjs/toolkit'
+
 import { USER_SECRET_TOKEN } from '@/shared/const/localstorage'
+import { loginByPass } from '../../api/authApi'
+import { LoginSchema } from '../types/loginSchema'
+import { userActions } from '@/entities/User/models/slice/userSlice'
 
-export const login = (authData: LoginSchema) => {
-  try {
-    if (!response || !response.access_token) {
-      throw Error()
+export const login = createAsyncThunk(
+  'login/loginByPassword',
+  async (authData: LoginSchema, { rejectWithValue, dispatch }) => {
+    try {
+      const response = await dispatch(loginByPass(authData)).unwrap()
+
+      if (!response) {
+        return rejectWithValue('error')
+      }
+
+      localStorage.setItem(USER_SECRET_TOKEN, response)
+      dispatch(userActions.setInited(true))
+      window.location.reload()
+
+      return response
+    } catch (e) {
+      return rejectWithValue('error')
     }
-
-    localStorage.setItem(USER_SECRET_TOKEN, response.access_token)
-
-    window.location.reload()
-
-    return response
-  } catch (e) {
-    throw Error()
-  }
-}
+  },
+)

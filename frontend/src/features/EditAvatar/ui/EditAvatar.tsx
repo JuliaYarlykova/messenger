@@ -3,6 +3,7 @@ import { Avatar, Input } from '@/shared/ui'
 import cls from './editAvatar.module.scss'
 import { classNames } from '@/shared/lib/classNames/classNames'
 import { useRef } from 'react'
+import { postAvatar } from '../api/editAvatar'
 
 interface EditAvatarProps {
   img?: string
@@ -10,12 +11,29 @@ interface EditAvatarProps {
 
 export const EditAvatar = (props: EditAvatarProps) => {
   const { img } = props
+  console.log(img)
   const ref = useRef<HTMLInputElement>(null)
+  const [editAvatar] = postAvatar()
+  if (!img) return null
+  const changeAvatar = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0]
+    if (file) {
+      const data = {
+        file: file,
+      }
+      editAvatar(data)
+    }
+  }
   return (
     <div className={cls.wrapper}>
-      <Avatar src={img} size={350} />
+      <Avatar src={img} size={250} />
       <label htmlFor="" className={cls.label}>
-        <Input type="file" className={cls.input} ref={ref} />
+        <Input
+          type="file"
+          className={cls.input}
+          ref={ref}
+          onChange={(e) => changeAvatar(e)}
+        />
         <span
           className={classNames('material-symbols-outlined', {}, [cls.edit])}
         >

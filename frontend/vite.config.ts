@@ -15,7 +15,7 @@ export default defineConfig({
   },
   define: {
     __IS_DEV__: JSON.stringify(true),
-    __API__: JSON.stringify(''),
+    __API__: JSON.stringify(' https://ejbb16-95-191-46-204.ru.tuna.am/api'),
     __SOCKETURL__: JSON.stringify(''),
   },
 })

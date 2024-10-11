@@ -11,6 +11,8 @@ import {
 import cls from './AuthorisationForm.module.scss'
 import { classNames } from '@/shared/lib/classNames/classNames'
 import { AppLink, Button, Card, Input } from '@/shared/ui'
+import { useSelector } from 'react-redux'
+import { getLoginState } from '../model/selectors/getLoginState'
 
 export interface AuthorizationFormProps {
   className?: string
@@ -19,6 +21,7 @@ export interface AuthorizationFormProps {
 export const AuthorizationForm = memo((props: AuthorizationFormProps) => {
   const { className } = props
   const [showPassword] = useState(false)
+  const { email, password, error, isLoading } = useSelector(getLoginState)
 
   const {
     handleSubmit,
