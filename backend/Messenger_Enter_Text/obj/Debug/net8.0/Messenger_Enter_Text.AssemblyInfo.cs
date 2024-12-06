@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Messenger_Enter_Text")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b41df53a6612d0db8e9e1a19cc8fe287d73fe8d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93e912f2b0e2a73ba185776918cd49fc0c945842")]
 [assembly: System.Reflection.AssemblyProductAttribute("Messenger_Enter_Text")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Messenger_Enter_Text")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

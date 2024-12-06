@@ -13,13 +13,13 @@ namespace Messenger_Enter_Text.Controllers
 {
   [ApiController]
   [Route("api/[controller]")]
-  public class UserController : ControllerBase
+  public class userController : ControllerBase
   {
 
     private readonly Context _context;
     private readonly IMapper _mapper;
 
-    public UserController(Context context, IMapper mapper)
+    public userController(Context context, IMapper mapper)
     {
       _context = context;
       _mapper = mapper;
@@ -49,6 +49,11 @@ namespace Messenger_Enter_Text.Controllers
       }
     }
 
+    record Tk
+    {
+      public string token {  get; set; }
+    }
+
     [HttpPost("login")]
     public async Task<ActionResult> SignIn(string email, string password)
     {
@@ -70,8 +75,11 @@ namespace Messenger_Enter_Text.Controllers
         return Unauthorized(ex.Message);
       }
 
+      Tk tk = new Tk();
+      tk.token = token;
+
       var user = await userRep.GetByEmail(email);
-      return user.IsFrozen ? Forbid("Account is frozen") : Ok(token);
+      return user.IsFrozen ? Forbid("Account is frozen") : new JsonResult(tk);
     }
 
     [HttpPost]
@@ -97,6 +105,7 @@ namespace Messenger_Enter_Text.Controllers
       user.UserProfile.User = user;
       user.UserProfile.Nickname = nickname.Trim();
       user.UserProfile.About = "Hey, I'm here";
+      user.UserProfile.ImagePath = "ProfileImages/avatar.png";
 
       new UserRep(_context, _mapper).Add(user);
       await _context.SaveChangesAsync();
@@ -107,6 +116,14 @@ namespace Messenger_Enter_Text.Controllers
     [HttpPut("password")]
     public async Task<ActionResult> ChangePassword(int id, string oldPassword, string newPassword)
     {
+      var emailClaim = User.FindFirst(ClaimTypes.Email)?.Value;
+      var roleClaim = User.FindFirst(ClaimTypes.Role)?.Value;
+
+      var user = await new UserRep(_context, _mapper).GetById(id);
+      if (user != null && emailClaim != user.UserEmail && roleClaim != "Admin")
+      {
+        return Forbid("An attempt to delete inaccessible user detected");
+      }
       bool success = await new UserRep(_context, _mapper).ChangePassword(id, oldPassword, newPassword);
       return success ? Ok() : Unauthorized("Old password does not match with the current one or user was not found");
     }

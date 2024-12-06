@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\repository\\userrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\repository\\userrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{976F950E-5FD4-467C-881D-EB8AC9C27DCD}|ws_server\\ws_server.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\ws_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{976F950E-5FD4-467C-881D-EB8AC9C27DCD}|ws_server\\ws_server.csproj|solutionrelative:ws_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\dtos\\chatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\dtos\\chatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\repository\\userrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\repository\\userrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\repository\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\repository\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\repository\\messagerep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\repository\\messagerep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\controllers\\complaintcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\controllers\\complaintcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\controllers\\configcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\controllers\\configcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\database\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\database\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|c:\\users\\egork\\source\\repos\\messenger\\backend\\messenger_enter_text\\entities\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2048BFF3-9BA0-4B71-9461-3F0D77309AA8}|Messenger_Enter_Text\\Messenger_Enter_Text.csproj|solutionrelative:messenger_enter_text\\entities\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,118 +49,137 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "DockedWidth": 334,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IRepo.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Repository\\IRepo.cs",
-              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Repository\\IRepo.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Repository\\IRepo.cs",
-              "RelativeToolTip": "Messenger_Enter_Text\\Repository\\IRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T14:55:46.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ChatDto.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\DTOs\\ChatDto.cs",
-              "RelativeDocumentMoniker": "Messenger_Enter_Text\\DTOs\\ChatDto.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\DTOs\\ChatDto.cs",
-              "RelativeToolTip": "Messenger_Enter_Text\\DTOs\\ChatDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T14:55:42.035Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DBContext.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Database\\DBContext.cs",
-              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Database\\DBContext.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Database\\DBContext.cs",
-              "RelativeToolTip": "Messenger_Enter_Text\\Database\\DBContext.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAwwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T14:55:36.807Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "apiController.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\apiController.cs",
-              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Controllers\\apiController.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\apiController.cs",
-              "RelativeToolTip": "Messenger_Enter_Text\\Controllers\\apiController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T14:55:28.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "Messenger_Enter_Text\\PasswordHasher.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\PasswordHasher.cs",
-              "RelativeToolTip": "Messenger_Enter_Text\\PasswordHasher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T14:37:10.795Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Entities\\User.cs",
-              "RelativeToolTip": "Messenger_Enter_Text\\Entities\\User.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T14:29:08.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Program.cs",
               "RelativeDocumentMoniker": "Messenger_Enter_Text\\Program.cs",
               "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Program.cs",
               "RelativeToolTip": "Messenger_Enter_Text\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAjAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAuwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T06:29:01.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Messenger_Enter_Text\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAmwG0AAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T11:05:39.856Z",
+              "WhenOpened": "2024-12-05T15:07:25.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserRep.cs",
               "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Repository\\UserRep.cs",
               "RelativeDocumentMoniker": "Messenger_Enter_Text\\Repository\\UserRep.cs",
               "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Repository\\UserRep.cs",
               "RelativeToolTip": "Messenger_Enter_Text\\Repository\\UserRep.cs",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAQwJgAAAAoAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAUwBkAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T07:49:32.728Z",
+              "WhenOpened": "2024-12-05T13:15:35.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "chatController.cs",
+              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\chatController.cs",
+              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Controllers\\chatController.cs",
+              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\chatController.cs",
+              "RelativeToolTip": "Messenger_Enter_Text\\Controllers\\chatController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBIAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T13:01:00.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "messageController.cs",
+              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\messageController.cs",
+              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Controllers\\messageController.cs",
+              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\messageController.cs",
+              "RelativeToolTip": "Messenger_Enter_Text\\Controllers\\messageController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAAGAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T12:59:41.691Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "complaintController.cs",
+              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\complaintController.cs",
+              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Controllers\\complaintController.cs",
+              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\complaintController.cs",
+              "RelativeToolTip": "Messenger_Enter_Text\\Controllers\\complaintController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T13:00:58.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "configController.cs",
+              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\configController.cs",
+              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Controllers\\configController.cs",
+              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Controllers\\configController.cs",
+              "RelativeToolTip": "Messenger_Enter_Text\\Controllers\\configController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T13:00:54.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MessageRep.cs",
+              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Repository\\MessageRep.cs",
+              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Repository\\MessageRep.cs",
+              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Repository\\MessageRep.cs",
+              "RelativeToolTip": "Messenger_Enter_Text\\Repository\\MessageRep.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAswCcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T06:34:02.138Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 256,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\ws_server\\Program.cs",
+              "RelativeDocumentMoniker": "ws_server\\Program.cs",
+              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\ws_server\\Program.cs",
+              "RelativeToolTip": "ws_server\\Program.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAhwIQAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T12:18:22.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DBContext.cs",
+              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Database\\DBContext.cs",
+              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Database\\DBContext.cs",
+              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Database\\DBContext.cs",
+              "RelativeToolTip": "Messenger_Enter_Text\\Database\\DBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T12:19:15.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Chat.cs",
+              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Entities\\Chat.cs",
+              "RelativeDocumentMoniker": "Messenger_Enter_Text\\Entities\\Chat.cs",
+              "ToolTip": "C:\\Users\\egork\\source\\repos\\messenger\\backend\\Messenger_Enter_Text\\Entities\\Chat.cs",
+              "RelativeToolTip": "Messenger_Enter_Text\\Entities\\Chat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T12:55:22.629Z"
             }
           ]
         }

@@ -1,8 +1,12 @@
-using Messenger_Enter_Text.Database;
+﻿using Messenger_Enter_Text.Database;
 using Messenger_Enter_Text.DTOs;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using NgrokAspNetCore;
+using System.Net;
+using System.Net.WebSockets;
 using System.Text;
 
 public class AuthOptions
@@ -21,6 +25,20 @@ internal class Program
   private static void Main(string[] args)
   {
     var builder = WebApplication.CreateBuilder(args);
+
+
+    builder.Services.AddCors(options =>
+    {
+      options.AddPolicy("AllowAllHeaders",
+        builder =>
+        {
+          builder
+          .AllowAnyOrigin()
+          .AllowAnyMethod()
+          .AllowAnyHeader();
+        });
+    });
+
 
     builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         .AddJwtBearer(options =>
@@ -56,7 +74,10 @@ internal class Program
       app.UseSwaggerUI();
     }
 
-    app.UseHttpsRedirection();
+    //app.UseHttpsRedirection();
+    app.UseWebSockets();
+
+    app.UseCors("AllowAllHeaders");
 
     app.UseAuthentication();
 

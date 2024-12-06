@@ -277,3 +277,5 @@ C:\Users\egork\source\repos\messenger\backend\Messenger_Enter_Text\obj\Debug\net
 C:\Users\egork\source\repos\messenger\backend\Messenger_Enter_Text\obj\Debug\net8.0\Messenger_Enter_Text.pdb
 C:\Users\egork\source\repos\messenger\backend\Messenger_Enter_Text\obj\Debug\net8.0\Messenger_Enter_Text.genruntimeconfig.cache
 C:\Users\egork\source\repos\messenger\backend\Messenger_Enter_Text\obj\Debug\net8.0\ref\Messenger_Enter_Text.dll
+C:\Users\egork\source\repos\messenger\backend\Messenger_Enter_Text\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\egork\source\repos\messenger\backend\Messenger_Enter_Text\bin\Debug\net8.0\NgrokAspNetCore.Lib.dll
