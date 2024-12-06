@@ -10,9 +10,12 @@ import {
 
 import cls from './AuthorisationForm.module.scss'
 import { classNames } from '@/shared/lib/classNames/classNames'
-import { AppLink, Button, Card, Input } from '@/shared/ui'
+import { Button, Card, Input } from '@/shared/ui'
 import { useSelector } from 'react-redux'
 import { getLoginState } from '../model/selectors/getLoginState'
+import { loginActions } from '../model/slice/loginSlice'
+import { login } from '../model/services/login'
+import { useAppDispatch } from '@/shared/lib/hooks/useContext'
 
 export interface AuthorizationFormProps {
   className?: string
@@ -21,7 +24,23 @@ export interface AuthorizationFormProps {
 export const AuthorizationForm = memo((props: AuthorizationFormProps) => {
   const { className } = props
   const [showPassword] = useState(false)
-  const { email, password, error, isLoading } = useSelector(getLoginState)
+  const { email, password } = useSelector(getLoginState)
+
+  const dispatch = useAppDispatch()
+
+  const onChangeEmail = useCallback(
+    (value: string) => {
+      dispatch(loginActions.setEmail(value))
+    },
+    [dispatch],
+  )
+
+  const onChangePassword = useCallback(
+    (value: string) => {
+      dispatch(loginActions.setPassword(value))
+    },
+    [dispatch],
+  )
 
   const {
     handleSubmit,
@@ -41,6 +60,10 @@ export const AuthorizationForm = memo((props: AuthorizationFormProps) => {
   const onSubmit: SubmitHandler<AuthorizationFormSchema> = useCallback(() => {
     reset()
   }, [reset])
+
+  const onLoginClick = useCallback(() => {
+    dispatch(login({ email, password }))
+  }, [dispatch, email, password])
 
   return (
     <Card
@@ -62,6 +85,7 @@ export const AuthorizationForm = memo((props: AuthorizationFormProps) => {
               errorMessage={errors.email?.message}
               onChange={(event) => {
                 field.onChange(event.target.value)
+                onChangeEmail(event.target.value)
                 if (errors.email) trigger('email')
               }}
             />
@@ -79,15 +103,18 @@ export const AuthorizationForm = memo((props: AuthorizationFormProps) => {
               placeholder="Пароль"
               onChange={(event) => {
                 field.onChange(event.target.value)
+                onChangePassword(event.target.value)
                 if (errors.password) trigger('password')
               }}
             />
           )}
         />
-        <AppLink to="/" className={cls.link}>
-          Забыли пароль?
-        </AppLink>
-        <Button type="submit" disabled={!isValid} className={cls.form_button}>
+        <Button
+          type="submit"
+          disabled={!isValid}
+          className={cls.form_button}
+          onClick={onLoginClick}
+        >
           Войти
         </Button>
       </form>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Messenger_Enter_Text")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c528b06411c1d1932a84cbae1f43d7b9290bf0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32eba7084e901634afe980ac0ad7085fb6b8daf2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Messenger_Enter_Text")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Messenger_Enter_Text")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

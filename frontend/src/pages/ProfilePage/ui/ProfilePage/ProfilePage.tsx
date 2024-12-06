@@ -25,13 +25,9 @@ const ProfilePage = () => {
       <AvatarPart
         name={user.nickname}
         status={user.status}
-        img={user.imagePath?.split('\\')[1]}
+        img={user.imagePath}
       />
-      <PersonalInfo
-        city={'Томск'}
-        birthday={user.birthday}
-        aducation={'ТУСУР'}
-      />
+      <PersonalInfo birthday={user.birthday} about={user.about} />
       <UpdateProfile isOpen={isOpen} setOpen={() => setOpen(false)} />
     </Page>
   )

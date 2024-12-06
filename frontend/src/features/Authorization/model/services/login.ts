@@ -9,13 +9,13 @@ export const login = createAsyncThunk(
   'login/loginByPassword',
   async (authData: LoginSchema, { rejectWithValue, dispatch }) => {
     try {
-      const response = await dispatch(loginByPass(authData)).unwrap()
-
-      if (!response) {
+      const response = await dispatch(loginByPass(authData))
+      console.log(response.data)
+      if (!response.data) {
         return rejectWithValue('error')
       }
 
-      localStorage.setItem(USER_SECRET_TOKEN, response)
+      localStorage.setItem(USER_SECRET_TOKEN, response.data.token)
       dispatch(userActions.setInited(true))
       window.location.reload()
 

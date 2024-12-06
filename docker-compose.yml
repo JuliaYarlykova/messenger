@@ -1,0 +1,8 @@
+name: messenger
+services:
+  app:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3001:5173

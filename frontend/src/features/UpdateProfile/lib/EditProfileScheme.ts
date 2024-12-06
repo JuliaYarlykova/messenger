@@ -20,11 +20,7 @@ export const editProfileSchema = z.object({
       const currentDate = new Date().getFullYear()
       return Number(date.split('-')[0]) <= currentDate + 1
     }, 'Неверный формат даты'),
-  email: z
-    .string()
-    .min(1, 'Заполните обязательные поля')
-    .regex(regex, 'Поле содержит недопустимые символы'),
-  city: z
+  about: z
     .string()
     .min(1, 'Заполните обязательные поля')
     .regex(regex, 'Поле содержит недопустимые символы'),

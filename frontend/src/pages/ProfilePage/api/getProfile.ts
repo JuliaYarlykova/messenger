@@ -7,7 +7,7 @@ interface ProfileScheme {
   birthday: string
   status: boolean
   hadBeen: string
-  imagePath?: string
+  imagePath: string
 }
 
 interface id {

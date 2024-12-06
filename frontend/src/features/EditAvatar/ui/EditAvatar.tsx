@@ -1,9 +1,9 @@
-import { Avatar, Input } from '@/shared/ui'
+import { Avatar, Button, Input } from '@/shared/ui'
 
 import cls from './editAvatar.module.scss'
 import { classNames } from '@/shared/lib/classNames/classNames'
 import { useRef } from 'react'
-import { postAvatar } from '../api/editAvatar'
+import { deleteAvatar, postAvatar } from '../api/editAvatar'
 
 interface EditAvatarProps {
   img?: string
@@ -11,10 +11,10 @@ interface EditAvatarProps {
 
 export const EditAvatar = (props: EditAvatarProps) => {
   const { img } = props
-  console.log(img)
   const ref = useRef<HTMLInputElement>(null)
   const [editAvatar] = postAvatar()
-  if (!img) return null
+  const [delAvatar] = deleteAvatar()
+
   const changeAvatar = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0]
     if (file) {
@@ -23,6 +23,30 @@ export const EditAvatar = (props: EditAvatarProps) => {
       }
       editAvatar(data)
     }
+  }
+  if (!img)
+    return (
+      <div className={cls.wrapper}>
+        <div className="">загрузить изображение</div>
+
+        <label htmlFor="" className={cls.label}>
+          <Input
+            type="file"
+            className={cls.input}
+            ref={ref}
+            onChange={(e) => changeAvatar(e)}
+          />
+          <span
+            className={classNames('material-symbols-outlined', {}, [cls.edit])}
+          >
+            edit
+          </span>
+        </label>
+      </div>
+    )
+
+  const handlerDelAvatar = () => {
+    delAvatar(null)
   }
   return (
     <div className={cls.wrapper}>
@@ -40,6 +64,14 @@ export const EditAvatar = (props: EditAvatarProps) => {
           edit
         </span>
       </label>
+
+      <Button className={cls.label_delete} onClick={handlerDelAvatar}>
+        <span
+          className={classNames('material-symbols-outlined', {}, [cls.delete])}
+        >
+          delete
+        </span>
+      </Button>
     </div>
   )
 }

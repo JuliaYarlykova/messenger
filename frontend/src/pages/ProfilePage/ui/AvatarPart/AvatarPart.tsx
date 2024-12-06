@@ -4,7 +4,7 @@ import { getAvatar } from '../../api/getAvatar'
 import { useEffect, useState } from 'react'
 
 interface AvatarPartProps {
-  img?: string
+  img: string
   name?: string
   status?: boolean
 }
@@ -12,7 +12,8 @@ interface AvatarPartProps {
 export const AvatarPart = (props: AvatarPartProps) => {
   const { img, name, status } = props
   const currStatus = status ? 'Онлайн' : 'Не в сети'
-  const { data: avatar, isLoading } = getAvatar(img)
+
+  const { data: avatar, isLoading } = getAvatar(img ?? '')
   const [av, setAv] = useState<string>()
 
   useEffect(() => {

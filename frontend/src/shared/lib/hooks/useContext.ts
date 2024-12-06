@@ -1,15 +1,5 @@
-import { createContext } from 'react'
-const user = {
-  name: 'Ярлыкова Юлия',
-  birthday: '25-06-2004',
-  img: '',
-  city: 'Томск',
-  aducation: 'ТУСУР',
-}
+import { useDispatch } from 'react-redux'
 
-interface user {
-  login: string
-  password: string
-}
+import { AppDispatch } from '@/app/providers/StoreProvider'
 
-export const AuthContext = createContext<user | null>(null)
+export const useAppDispatch = () => useDispatch<AppDispatch>()

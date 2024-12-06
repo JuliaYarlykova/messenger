@@ -13,7 +13,7 @@ const metricsApi = rtkApi.injectEndpoints({
           return response.blob()
         },
       }),
-      providesTags: ['Avatar'],
+      providesTags: ['Profile'],
     }),
   }),
 })

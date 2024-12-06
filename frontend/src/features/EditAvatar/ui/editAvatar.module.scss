@@ -1,5 +1,6 @@
 .wrapper {
   position: relative;
+  width: 250px;
 }
 
 .edit {
@@ -22,4 +23,19 @@
   top: 0;
   width: 0;
   height: 0;
+}
+
+.delete {
+  color: var(--violet-color);
+}
+
+.label_delete {
+  position: absolute;
+  padding: 6px;
+  width: fit-content;
+  border-radius: 100%;
+  bottom: 10px;
+  left: 20px;
+  background-color: var(--primary-color);
+  cursor: pointer;
 }

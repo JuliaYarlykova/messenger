@@ -23,7 +23,16 @@ const metricsApi = rtkApi.injectEndpoints({
       },
       invalidatesTags: ['Profile'],
     }),
+    deleteAvatar: build.mutation<null, null>({
+      query: () => ({
+        url: `/profile/delete-profile-image?id=4`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: ['Profile'],
+    }),
   }),
 })
 
 export const postAvatar = metricsApi.usePostAvatarMutation
+
+export const deleteAvatar = metricsApi.useDeleteAvatarMutation

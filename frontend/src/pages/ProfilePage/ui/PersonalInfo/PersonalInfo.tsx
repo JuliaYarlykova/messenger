@@ -4,12 +4,11 @@ import cls from './PersonalInfo.module.scss'
 
 interface PersonalInfo {
   birthday?: string
-  city?: string
-  aducation?: string
+  about?: string
 }
 
 export const PersonalInfo = (props: PersonalInfo) => {
-  const { birthday, city, aducation } = props
+  const { birthday, about } = props
   return (
     <section className={cls.section}>
       <InfoLine
@@ -22,11 +21,7 @@ export const PersonalInfo = (props: PersonalInfo) => {
       />
       <InfoLine
         icon={<span className="material-symbols-outlined">home</span>}
-        info={city}
-      />
-      <InfoLine
-        icon={<span className="material-symbols-outlined">school</span>}
-        info={aducation}
+        info={about}
       />
     </section>
   )

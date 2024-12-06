@@ -8,6 +8,7 @@ import {
   FormOutputData,
 } from '../lib/EditProfileScheme'
 import { useCallback, useEffect } from 'react'
+import { putProfile } from '../api/updateProfile'
 
 interface UpdateProfileProps {
   isOpen: boolean
@@ -16,19 +17,18 @@ interface UpdateProfileProps {
 
 export const UpdateProfile = (props: UpdateProfileProps) => {
   const { isOpen, setOpen } = props
-
+  const [updateProfile] = putProfile()
   const {
     handleSubmit,
     reset,
     control,
     trigger,
-    formState: { errors, isValid },
-  } = useForm<FormInputData, any, FormOutputData>({
+    formState: { errors },
+  } = useForm<FormInputData, FormInputData, FormOutputData>({
     defaultValues: {
       name: '',
       date: '',
-      email: '',
-      city: '',
+      about: '',
     },
     resolver: zodResolver(editProfileSchema),
     mode: 'onSubmit',
@@ -38,7 +38,16 @@ export const UpdateProfile = (props: UpdateProfileProps) => {
     if (!isOpen) reset()
   }, [isOpen, reset])
 
-  const onSubmit = useCallback(async (data) => {}, [])
+  const onSubmit = useCallback(
+    async (data: FormOutputData) => {
+      const queryParams = new URLSearchParams(data).toString()
+      await updateProfile(queryParams)
+      reset()
+      setOpen()
+    },
+    [reset, setOpen, updateProfile],
+  )
+
   return (
     <Modal isOpen={isOpen} onClose={setOpen}>
       <form className={cls.form} onSubmit={handleSubmit(onSubmit)} noValidate>
@@ -67,7 +76,7 @@ export const UpdateProfile = (props: UpdateProfileProps) => {
               {...field}
               label="Дата рождения"
               size="l"
-              errorMessage={errors.name?.message}
+              errorMessage={errors.date?.message}
               onChange={(event) => {
                 field.onChange(event.target.value)
                 if (errors.name) trigger('date')
@@ -76,38 +85,22 @@ export const UpdateProfile = (props: UpdateProfileProps) => {
           )}
         />
         <Controller
-          name="email"
+          name="about"
           control={control}
           render={({ field }) => (
             <Input
               {...field}
-              label="Почта"
+              label="Обо мне"
               size="l"
-              errorMessage={errors.name?.message}
+              errorMessage={errors.about?.message}
               onChange={(event) => {
                 field.onChange(event.target.value)
-                if (errors.name) trigger('email')
+                if (errors.name) trigger('about')
               }}
             />
           )}
         />
-        <Controller
-          name="city"
-          control={control}
-          render={({ field }) => (
-            <Input
-              {...field}
-              label="Город"
-              size="l"
-              errorMessage={errors.name?.message}
-              onChange={(event) => {
-                field.onChange(event.target.value)
-                if (errors.name) trigger('city')
-              }}
-            />
-          )}
-        />
-        <Button>Сохранить изменения</Button>
+        <Button type="submit">Сохранить изменения</Button>
       </form>
     </Modal>
   )

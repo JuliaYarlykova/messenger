@@ -7,6 +7,7 @@ import './app/styles/index.scss'
 import 'material-symbols'
 
 import { ErrorBoundary } from '@/app/providers/ErrorBoundary'
+import { StoreProvider } from './app/providers/StoreProvider/ui/StoreProvider'
 
 const container = document.getElementById('root')
 
@@ -20,8 +21,10 @@ const root = createRoot(container)
 
 root.render(
   <BrowserRouter>
-    <ErrorBoundary>
-      <App />
-    </ErrorBoundary>
+    <StoreProvider>
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
+    </StoreProvider>
   </BrowserRouter>,
 )
