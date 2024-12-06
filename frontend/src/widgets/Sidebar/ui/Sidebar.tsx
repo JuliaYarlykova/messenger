@@ -5,41 +5,25 @@ import cls from './Sidebar.module.scss'
 
 const chats = [
   {
+    id: '1',
     icon: '',
     title: 'чат ',
     lastMessage: 'сообщение',
   },
   {
+    id: '2',
     icon: '',
     title: 'чат ',
     lastMessage: 'сообщение',
   },
   {
+    id: '3',
     icon: '',
     title: 'чат ',
     lastMessage: 'сообщение',
   },
   {
-    icon: '',
-    title: 'чат ',
-    lastMessage: 'сообщение',
-  },
-  {
-    icon: '',
-    title: 'чат ',
-    lastMessage: 'сообщение',
-  },
-  {
-    icon: '',
-    title: 'чат ',
-    lastMessage: 'сообщение',
-  },
-  {
-    icon: '',
-    title: 'чат ',
-    lastMessage: 'сообщение',
-  },
-  {
+    id: '4',
     icon: '',
     title: 'чат ',
     lastMessage: 'сообщение',

@@ -1,7 +1,7 @@
 declare const __IS_DEV__: boolean
 declare const __API__: string
 declare const __SOCKETURL__: string
-
+declare const __SOCKETURLS__: string
 declare module '*.scss' {
   type IClassNames = Record<string, string>
   const classNames: IClassNames

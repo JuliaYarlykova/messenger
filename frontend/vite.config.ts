@@ -15,8 +15,9 @@ export default defineConfig({
   },
   define: {
     __IS_DEV__: JSON.stringify(true),
-    __API__: JSON.stringify('https://bc43-185-210-140-48.ngrok-free.app/api'),
-    __SOCKETURL__: JSON.stringify(''),
+    __API__: JSON.stringify('http://26.199.226.124:5105/api'),
+    __SOCKETURL__: JSON.stringify('ws://26.199.226.124:1488/chat-list'),
+    __SOCKETURLS__: JSON.stringify('ws://26.199.226.124:1488/message-list'),
   },
   server: {
     watch: {

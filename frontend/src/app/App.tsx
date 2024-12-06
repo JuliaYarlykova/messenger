@@ -20,9 +20,9 @@ function App() {
     }
   })
   const token = localStorage.getItem(USER_SECRET_TOKEN)
-  if (!token) {
-    return <AuthPage />
-  }
+  // if (!token) {
+  //   return <AuthPage />
+  // }
 
   return (
     <div className="app">

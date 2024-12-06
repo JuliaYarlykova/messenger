@@ -1,10 +1,12 @@
 import { AuthPage } from '@/pages/AuthPage'
+import { ChatPage } from '@/pages/ChatPage/ui/ChatPage'
 import { MainPage } from '@/pages/MainPage'
 import { NotFoundPage } from '@/pages/NotFoundpage'
 import ProfilePage from '@/pages/ProfilePage/ui/ProfilePage/ProfilePage'
 import {
   AppRoutes,
   getRouteAuth,
+  getRouteChat,
   getRouteMain,
   getRouteProfile,
 } from '@/shared/const/route'
@@ -26,5 +28,9 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
   [AppRoutes.PROFILE]: {
     path: getRouteProfile(),
     element: <ProfilePage />,
+  },
+  [AppRoutes.CHAT_PAGE]: {
+    path: getRouteChat(),
+    element: <ChatPage />,
   },
 }
